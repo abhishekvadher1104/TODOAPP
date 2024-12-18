@@ -1,14 +1,15 @@
 .maincontainer {
     height: 20vh;
-    margin-bottom: 30px;
+    padding:50px 0 50px 0;
 }
 
 .todoitems {
     height: 20vh;
     width: 50vw;
     box-shadow: 5px 5px 10px gray;
-    margin-top: 50px;
+
     padding: 5px;
+
     display: flex;
     align-items: center;
     justify-content: space-around;

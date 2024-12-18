@@ -11,11 +11,13 @@
     flex-direction: row;
 
     >.todomain {
+
         .title {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 30px;
+            
         }
         >form{
         >.todo {
