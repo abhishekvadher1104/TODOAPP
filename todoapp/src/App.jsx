@@ -8,10 +8,11 @@ import { Toaster } from 'react-hot-toast'
 import { useContext, useEffect } from 'react'
 import axios from 'axios'
 import { context, server } from './main'
-import Loader from './components/Loader'
 
 function App() {
   const { setUser, setIsAuthenticated ,setLoading} = useContext(context)
+
+  console.log(server)
 
   useEffect(() => {
     setLoading(true)
@@ -27,7 +28,6 @@ function App() {
         setUser({})
         setIsAuthenticated(false)
         setLoading(false)
-
       })
 
   }, [])

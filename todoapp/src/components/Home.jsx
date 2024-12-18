@@ -14,6 +14,8 @@ const Home = () => {
   const [refresh, setRefresh] = useState(false)
 
    const { isAuthenticated  } = useContext(context)
+   console.log(server);
+   
   const updateHandler = async (id) => {
     try {
       const { data } = await axios.put(`${server}/task/${id}`, {},
