@@ -15,7 +15,7 @@ config({
 
 // CORS configuration
 app.use(cors({
-    origin:[process.env.FRONTEND_URL ], // Ensure FRONTEND_URL is correctly defined
+    origin:[process.env.FRONTEND_URL, "http://localhost:5173" ], // Ensure FRONTEND_URL is correctly defined
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
     credentials: true, // Enable credentials (cookies, authorization headers, etc.)
