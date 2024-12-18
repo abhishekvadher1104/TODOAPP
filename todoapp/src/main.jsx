@@ -12,8 +12,8 @@ import { createContext } from 'react';
 export const context = createContext({ isAuthenticated: false })
 
 // Define your server endpoint globally
-export const server = "http://localhost:4000/api/v1/";
-// export const server = "https://todoapp-7ewf.onrender.com/api/v1";
+// export const server = "http://localhost:4000/api/v1/";
+export const server = "https://todoapp-7ewf.onrender.com/api/v1/";
 
 // Get the root element from the DOM
 const rootElement = document.getElementById('root');
