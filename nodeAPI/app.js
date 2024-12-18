@@ -13,16 +13,14 @@ config({
     path: './data/config.env'
 });
 
-console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
-
 // CORS configuration
 app.use(cors({
-    origin: process.env.FRONTEND_URL.split(","),
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true
-  }));
-  
+    origin:[process.env.FRONTEND_URL ], // Ensure FRONTEND_URL is correctly defined
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    credentials: true, // Enable credentials (cookies, authorization headers, etc.)
+    preflightContinue: false
+}));
 
 // Middleware for preflight requests (OPTIONS)
 app.options('*', cors());
