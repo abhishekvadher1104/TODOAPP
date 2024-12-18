@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    >div {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: xx-large;
+        color: aliceblue;
+        background-color: rgb(50, 46, 46);
+        text-align: center;
+    }
+
+    >article {
+
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding-left: 55px; 
+        gap: 50px;
+        background-color: gray;
+
+        >.customLink {
+            transition: all 0.3s ease;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer !important;
+            all: unset;
+            font-size: x-large;
+        }
+
+        .customLink:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+    }
+}

@@ -1,0 +1,49 @@
+.maincontainer {
+    height: 20vh;
+    margin-bottom: 30px;
+}
+
+.todoitems {
+    height: 20vh;
+    width: 50vw;
+    box-shadow: 5px 5px 10px gray;
+    margin-top: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    >.title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h4 {
+            text-transform: uppercase;
+            font-size: x-large;
+        }
+
+        >P {
+            text-transform: capitalize;
+            font-size: larger;
+        }
+    }
+
+    >.btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        >button {
+            height: 33px;
+            width: 70px;
+            margin-left: 30px;
+        }
+
+        >input {
+            height: 30px;
+            width: 30px;
+        }
+
+    }
+}

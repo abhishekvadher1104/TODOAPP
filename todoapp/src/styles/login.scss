@@ -1,0 +1,72 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.login {
+    >.acc {
+        margin-top: 25px;
+        text-align: start;
+    }
+
+    height: 50vh;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px gray;
+
+    >.title {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+    }
+form{
+
+    .inp {
+        margin-top: 40px;
+        
+        >.email {
+            font-size: 20px;
+
+            >input {
+                width: 180px;
+                height: 22px;
+            }
+        }
+        
+        >.password {
+            margin-top: 20px;
+            font-size: 20px;
+            
+            >input {
+                width: 180px;
+                height: 22px;
+            }
+        }
+    }
+    
+    
+    >button{
+        height:30px;
+        width:80px;
+        margin-top: 40px;
+        background-color: #f8f8f8;
+        border:1px solid black;
+        border-radius: 5px;
+        font-size: 19px;
+        
+    }
+    >button:hover{
+        background-color: #fff;
+    }
+}
+}
