@@ -5,7 +5,7 @@ import './styles/login.scss';
 import './styles/signup.scss';
 import './styles/home.scss';
 import './styles/Header.scss';
-import './styles/loader.scss';
+import './styles/Loader.scss';
 import './styles/Todoitem.scss';
 import { createContext } from 'react';
 
