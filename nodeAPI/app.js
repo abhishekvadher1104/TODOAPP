@@ -33,5 +33,9 @@ app.use(cookieParser());
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/task", taskRouter);
 
+app.get("/", (req, res) => {
+    res.send("nice working");
+});
+
 // Error-handling middleware (must be after other middleware)
 app.use(errorMiddleware);
